@@ -27,11 +27,7 @@
 namespace Sophus
 {
 
-SO2::SO2()
-{
-  unit_complex_.real() = 1.;
-  unit_complex_.imag() = 0.;
-}
+SO2::SO2() : unit_complex_(1, 0) {}
 
 SO2
 ::SO2(const SO2 & other) : unit_complex_(other.unit_complex_) {}
